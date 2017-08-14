@@ -1,0 +1,15 @@
+<h><a href=/everything>Take me straight to video</a></h>
+
+<form action="/preferences" method="post">{% csrf_token %}
+    <h>Check items you are uncomfortable viewing</h> <br/>
+    <input type="checkbox" name="unwanted" id="checkbox_1" value="Pink Floyd" />
+    <label for="checkbox_1">Pink Floyd</label><br/>
+    <input type="checkbox" name="unwanted" id="checkbox_2" value="Blondie" />
+    <label for="checkbox_2">Blondie</label><br/>
+    <h>Check items you want to see</h><br/>
+    <input type="checkbox" name="wanted" id="checkbox_1" value="Pink Floyd" />
+    <label for="checkbox_1">Pink Floyd</label><br/>
+    <input type="checkbox" name="wanted" id="checkbox_2" value="Blondie" />
+    <label for="checkbox_2">Blondie</label><br/>
+<input type="submit" value="filter" />
+</form>

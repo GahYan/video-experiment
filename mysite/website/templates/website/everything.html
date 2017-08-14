@@ -1,0 +1,6 @@
+
+    {% for video in video_list %}
+        <div><h1>{{video.name}}</h1>
+        <li><iframe width="420" height="315"src="{{video.link}}" allowfullscreen=allowfullscreen>
+        </iframe></li></div>
+    {% endfor %}
